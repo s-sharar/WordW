@@ -6,14 +6,10 @@ function GuessWord({ guesses, setGuesses, answer, gameStatus, setGameStatus, vis
     event.preventDefault();
     const nextGuesses = [...guesses, input];
     setInput('');
-    if (!difficulty) {
-      console.log('hello');
-    }
     setGuesses(nextGuesses);
     if (input === answer) {
       setGameStatus('won');
     } else if (nextGuesses.length >= difficulty) {
-      console.log('lost');
       setGameStatus('lost');
     }
   }

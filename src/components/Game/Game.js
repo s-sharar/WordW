@@ -9,8 +9,6 @@ import Keyboard from '../Keyboard';
 
 
 function Game( { answer, setAnswer, gameStatus, setGameStatus, guesses, setGuesses, difficulty, handleRestart } ) {
-  console.log(answer);
-  console.log(difficulty);
   const validatedGuesses = guesses.map((guess) =>
     checkGuess(guess, answer)
   );
