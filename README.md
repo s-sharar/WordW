@@ -9,8 +9,6 @@
 
 #### Features:
 
-<br />
-
 <ul>
   <li>
     Color-coded feedback for each grid.
